@@ -1,0 +1,139 @@
+/* =============================================
+ * Problem 10. Compiled vs Interpreted Languages
+ * =============================================
+ * Perform a search online about compiled and interpreted programming languages. What is the difference between the two kinds? 
+ * Give a few examples for each kind. Is C compiled or interpreted?
+ */
+
+Programming languages generally fall into one of two categories: Compiled or Interpreted. 
+
+With a compiled language, code you enter is reduced to a set of machine-specific instructions before being saved as an executable file. 
+In compiled languages, the program, once compiled, is expressed in the instructions of the target machine. 
+For example, an addition "+" operation in your source code could be translated directly to the "ADD" instruction in machine code.
+
+With interpreted languages, the code is saved in the same format that you entered. 
+An interpreted language is one where the instructions are not directly executed by the target machine, but instead read and executed by 
+some other program (which normally is written in the language of the native machine). 
+For example, the same "+" operation would be recognised by the interpreter at run time, which would then call its own "add(a,b)" function with 
+the appropriate arguments, which would then execute the machine code "ADD" instruction.
+
+Compiled programs generally run faster than interpreted ones because interpreted programs must be reduced to machine instructions at runtime. 
+It is usually easier to develop applications in an interpreted environment because you don't have to recompile your application each time you want to test a small section. 
+
+You can do anything that you can do in an interpreted language in a compiled language and vice-versa - they are both Turing complete. 
+Both have advantages and disadvantages for implementation and use.
+
+
+    Advantages of the compiled languages:
+
+Speed
+
+Compiled languages are always supposed to be fast because of their direct execution by the computer. Speed and performance can change programmers preference. 
+Especially for large projects, speed and performance is indispensable. Poor speed can crush user experience and can annoy them. 
+C is claimed to be the fastest programming language next to assembly code. It is believed that C is faster than C++ is some instances. 
+One website even says that some algorithms implemented in python may run ten times slower than its equivalent written in C++.
+It is also obvious that speed always does not matter. There can be places where speed is secondary.
+
+Native applications are secured
+
+Even though native applications can be disassembled, the assembly code is not so clear and the source code can not be that easily obtained. 
+For example it is possible to generate C# code from a .NET assembly using some tools but it is very very hard to generate C++ code from an executable. 
+
+Large softwares are written in Compiled Languages
+
+Large softwares and million dollar projects are often written in compiled languages because of the speed and performance they offer. 
+Many large softwares with huge code bases ranging from Office suites, IDEs, Compilers, Games, time and mission critical applications were written in compiled languages. 
+You can even observe in your computer many softwares are natively compiled. Even the web browser you are viewing this page may be written in compiled languages. 
+Browsers are compiled natively because they need speed. But the parts of a large software may be written in interpreted languages. 
+It is to be noticed that your browser uses many interpreted languages like JScript, VBScript, PHP etc., to view web pages.
+
+Reflection is not impossible 
+
+Reflection is not impossible in compiled languages. It is possible with third party libraries like GNU lightning, Boost Serialization etc., 
+Thus it is not true that reflection is impossible in compiled languages. It saves us from creating XML or any other sort of IO routines which saves our data textually for 
+every persistent data which is time consuming. Some programmers prefer saving their data in binary form rather than simply saving in a textual manner. 
+But writing compilers for native languages that can emit machine code is an advanced step though then there are some libraries like ASMJIT that can be used for real time machine code generation.
+
+Interoperability is possible with .NET, Java and Python
+
+It is possible for a natively compiled application to use .NET(through COM), Java libraries and Python source codes. 
+So if you have a large investment in interpreted languages and planning to move to compiled languages, you can still use your libraries that you have created for .NET, Java and python. 
+There is an option of using .NET controls in your MFC Applications. .NET Assemblies can be accessed by creating a COM wrapper from any program.
+
+
+
+    Advantages of Interpreted and JIT Compiled languages:
+
+General Advantages
+
+Interpreted languages saves compile time resulting in faster development. This makes them ideal for scientific and mathematical computing. 
+They also provide many features that aren't accessible in compiled languages. They are also very suitable for scripting. 
+For example Microsoft Word provides scripting capabilities by interpreting Visual Basic code. If you write an application which you need to seamlessly interact with the user, 
+then scripting is one of the choices. It also enable them to automate tasks reducing their appetite. Interpreted languages like JScript, VBScript, PHP are good choice for Web Programming. 
+This is because they can't be compiled for each and every platform and device while its loading. 
+Suppose if a web page is loaded in a Linux Machine, and it contains C++ code, it can't be compiled for that machine. 
+So interpreted languages play an inevitable role in web programming. They run whatever the device or machine is if viewed in a browser supporting them. 
+For example viewing a web page containing JScript in Google Chrome in computer and in an Android Tablet produces the same results. 
+Java is often referred to as an interpreted language. Java source code is converted to byte code. 
+Java is not popularly used as a desktop programming language but it finds its use in many other places like Web, Mobile phone programming, Android Programming etc., 
+For instance, Take Google's Android OS. It has a Linux kernel and so one can create software using ARM compilers. 
+But Google did not do that. Android has a Virtual Machine named Dalvik which executes Dalvik byte code. 
+For some reason they didn't embed a Java VM. They provided tools to convert Java bytecode to Dalvik Bytecode. 
+The reason for why they prefer Java over C++ is that Java has a large community which may lead to the rapid increase of apps in their store. 
+Java is also a powerful Object Oriented Programming language. The Android apps running on Dalvik VM does not provide full performance. 
+Although there were no visible effects on performance, Google has released Android Native Development Kit(NDK) which allows the users to speed up the critical pieces of code by the Native Code. 
+Android NDK provides a way for creating parts of apps using C and C++ ARM Compilers.
+
+Extending your application 
+
+Scripting languages also provide a great platform for writing extension or plugins for your applications without loading Dynamic link libraries or Shared Objects dynamically. 
+This can reduce the difficulty in writing a plugin for a particular application. The traditional way of writing a plugin involves creating a DLL which requires the compiler and 
+also the libraries used by the applications. Many modern applications provide way for creating plugins using scripting languages like Python. 
+
+Cross platform support
+
+Cross platform programming is always been difficult and a software clinging to a single platform can seriously affect the range of audience. 
+If you create a software in a compiled language you have to move the source from machine to machine and compiling the source in that machine. 
+But executing the source by the interpreter does not stick to a single platform only if the code itself is not platform dependent. 
+Producing platform independent code has not always been an issue. Suppose if you create a python application using Windows and want it to be 
+platform independent then don't use platform specific features like Component Object Model(COM) which is available only under windows. 
+Java follows the policy of "Write Once, Run anywhere". But .NET is not cross platform. It is much more suited for Windows but there are many variants of 
+.NET like dotGNU that are cross platform. Even there is a .NET based framework available for Android!!
+
+Java and .NET supports Reflection  
+
+Java and .NET languages support an excellent feature called reflection. Using reflection one even can create a method or class in runtime and use it. 
+Even a dozen of .NET languages rose only because of reflection feature. They support seamless object serialization without any external library. 
+Even an assembly can be disassembled using reflection. But one should be aware that every .NET and Java assembly can be re engineered using the same reflection feature. 
+This danger can be overcome by using obsufcators.
+
+Wide Range of Devices 
+
+Usage in wide range of devices where performance limits is another advantage of languages that aren't converted to native code. 
+Take Java Micro Edition, it is available in wide range of devices even in mobiles that aren't smart phones. 
+It allows the use of a powerful object oriented programming language to create apps for an unadvanced device. 
+The Java installer claims that Java runs on more than 3 billion devices. 
+Python interpreter is available for Android devices(QPython for Android) enabling the users to perform advanced calculations using a handy device. 
+No one can compile an applicaton to native code and run in a J2ME Device where there is actually no Operating System. 
+
+Smaller executables and packages
+
+It is obvious that the executables of interpreted applications are of very low size than that of the compiled languages. 
+It is interesting to note that in a C# application is embedded the Intermediate language which is not machine language. 
+It is the same case in Java and this dramatically can reduce the size of the executables. 
+No one should deny that Python libraries like wxWidgets are created using C++ and connected by SWIG. But the size of wxWidgets library for Python is less than for that of C++.
+
+Easily debuggable
+
+Bugs are often the headaches of programmers. .NET Languages and other interpreted languages provides facilities so that bugs can be caught easily. 
+They throw an exception and the details of the exception will be clearly furnished in a dialog box. 
+Unlike native code which only indicates an error is there managed code even show an error even that an object that is not initialized and also indicates the name of the object. 
+This easily eradicates bugs. For an instance if your application is distributed with a bug and the user sees an error message then the user can be intimated to send the error report. 
+It enables us to easily locate the error in the source code rather than searching for it. 
+
+Side by Side code execution 
+
+This is one of the features that are unique to the interpreted languages. This feature is unavailable in C# or Java. 
+Programming languages like Python, J, R have the console or GUI command prompt based softwares where code is executed on the fly. 
+They are also referred to as "shell". They also report errors on the fly. This can provide a concrete facility for learning. 
+

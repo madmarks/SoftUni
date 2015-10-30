@@ -1,0 +1,228 @@
+/* ================================
+ * Problem 9. Programming Languages
+ * ================================
+ * Perform a research (e.g. in Google or Wikipedia) and provide a short list with information about the most popular programming languages.
+ * How similar are they to C? How do they differ from C?
+ * Write in a text file called “programming-languages.txt” at least five languages along with 2-3 sentences about each of them.
+ * Use English.
+ */
+
+
+// C++
+
+Basic Introduction:
+    C++ is derived from C Language. It is a Superset of C. 
+    Earlier C++ was known as C with classes. 
+    In C++, the major change was the addition of classes and a mechanism for inheriting class objects into other classes. 
+    Most C Programs can be compiled in C++ compiler. 
+    C++ expressions are the same as C expressions. 
+    All C operators are valid in C++. 
+
+Following are the differences Between C and C++ :
+
+                               C                                                                      C++
+ 1. C is Procedural Language.                                                     1. C++ is non Procedural i.e Object oriented Language.
+ 2. No virtual Functions are present in C                                         2. The concept of virtual Functions are used in C++.
+ 3. In C, Polymorphism is not possible.                                           3. The concept of polymorphism is used in C++.
+                                                                                     Polymorphism is the most Important Feature of OOPS.
+ 4. Operator overloading is not possible in C.                                    4. Operator overloading is one of the greatest Feature of C++.
+ 5. Top down approach is used in Program Design.                                  5. Bottom up approach adopted in Program Design.
+ 6. No namespace Feature is present in C Language.                                6. Namespace Feature is present in C++ for avoiding Name collision.
+ 7. Multiple Declaration of global variables are allowed.                         7. Multiple Declaration of global varioables are not allowed.
+ 8. In C                                                                          8. In C++
+    scanf() Function used for Input.                                                 Cin>> Function used for Input.
+    printf() Function used for output.                                               Cout<< Function used for output.
+ 9. Mapping between Data and Function is difficult and complicated.               9. Mapping between Data and Function can be used using "Objects"
+10. In C, we can call main() Function through other Functions                    10. In C++, we cannot call main() Function through other functions.
+11. C requires all the variables to be defined at the starting of a scope.       11. C++ allows the declaration of variable anywhere in the scope i.e at time of its First use.
+12. No inheritance is possible in C.                                             12. Inheritance is possible in C++
+13. In C, malloc() and calloc() Functions are used for Memory Allocation and     13. In C++, new and delete operators are used for Memory Allocating and Deallocating.
+    free() function for memory Deallocating.
+14. It supports built-in and primitive data types.                               14. It support both built-in and user define data types.
+15. In C, Exception Handling is not present.                                     15. In C++, Exception Handling is done with Try and Catch block.
+
+=================================================================================================================================================================================================
+
+
+// Java
+
+   Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible. 
+   It is intended to let application developers "write once, run anywhere" (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.
+   Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of computer architecture. 
+   The language derives much of its syntax from C and C++, but it has fewer low-level facilities than either of them.
+
+Here are the major differences between C And JAVA.
+
+1. JAVA is Object-Oriented while C is procedural. Different Paradigms, that is.
+   Most differences between the features of the two languages arise due to the use of different programming paradigms. 
+   C breaks down to functions while JAVA breaks down to Objects. 
+   C is more procedure-oriented while JAVA is data-oriented.
+
+2. Java is an Interpreted language while C is a compiled language.
+   We all know what a compiler does. It takes your code & translates it into something the machine can understand-that is to say-0’s & 1’s-the machine-level code. 
+   That’s exactly what happens with our C code-it gets ‘compiled’. While with JAVA, the code is first transformed to what is called the bytecode. 
+   This bytecode is then executed by the JVM(Java Virtual Machine). For the same reason, JAVA code is more portable.
+
+3. C is a low-level language while JAVA is a high-level language.
+   C is a low-level language(difficult interpretation for the user, closer significance to the machine-level code) while JAVA is a high-level 
+   lagunage(abstracted from the machine-level details, closer significance to the program itself).
+
+4. C uses the top-down {sharp & smooth} approach while JAVA uses the bottom-up {on the rocks} approach.
+   In C, formulating the program begins by defining the whole and then splitting them into smaller elements. 
+   JAVA(and C++ and other OOP languages) follows the bottom-up approach where the smaller elements combine together to form the whole.
+
+5. Pointer go backstage in JAVA while C requires explicit handling of pointers.
+   When it comes to JAVA, we don’t need the *’s and &’s to deal with pointers and their addressing. More formally, there is no pointer syntax required in JAVA. 
+   It does what it needs to do. While in JAVA, we do create references for objects.
+
+6. The Behind-the-scenes Memory Management with JAVA & The User-Based Memory Management in C.
+   Remember ‘malloc’ & ‘free’? Those are the library calls used in C to allocate & free chunks of memory for specific data(specified using the keyword ‘sizeof’). 
+   Hence in C, the memory is managed by the user while JAVA uses a garbage collector that deletes the objects that no longer have any references to them.
+
+7. JAVA supports Method Overloading while C does not support overloading at all.
+   JAVA supports function or method overloading-that is we can have two or more functions with the same name(with certain varying parameters like return types to allow the machine to differentiate between them). 
+   That it to say, we can overload methods with the same name having different method signatures. JAVA(unlike C++), does not support Operator Overloading while C does not allow overloading at all.
+
+8. Unlike C, JAVA does not support Preprocessors, & does not really them.
+   The preprocessor directives like #include and #define, etc are considered one of the most essential elements of C programming. 
+   However, there are no preprocessors in JAVA. JAVA uses other alternatives for the preprocessors. 
+   For instance, public static final is used instead of the #define preprocessor. 
+   Java maps class names to a directory and file structure instead of the #include used to include files in C.
+
+9. The standard Input & Output Functions.
+   Although this difference might not hold any conceptual(intuitive) significance, but it’s maybe just the tradition. 
+   C uses the printf & scanf functions as its standard input & output while JAVA uses the System.out.print & System.in.read functions.
+
+10. Exception Handling in JAVA And the errors & crashes in C.
+   When an error occurs in a Java program it results in an exception being thrown. It can then be handled using various exception handling techniques. 
+   While in C, if there’s an error, there IS an error.
+
+=================================================================================================================================================================================================
+
+
+// C#
+   
+    The C# language is intended to be a simple, modern, general-purpose, object-oriented programming language.
+    
+    The language, and implementations thereof, should provide support for software engineering principles such as strong type checking, array bounds checking, 
+    detection of attempts to use uninitialized variables, and automatic garbage collection. Software robustness, durability, and programmer productivity are important.
+    
+    The language is intended for use in developing software components suitable for deployment in distributed environments.
+    
+    Portability is very important for source code and programmers, especially those already familiar with C and C++.
+    
+    Support for internationalization is very important.
+    
+    C# is intended to be suitable for writing applications for both hosted and embedded systems, ranging from the very large that use sophisticated operating systems, 
+    down to the very small having dedicated functions.
+    
+    Although C# applications are intended to be economical with regard to memory and processing power requirements, 
+    the language was not intended to compete directly on performance and size with C or assembly language.
+
+
+Following are the differences between C and C# :
+
+    C programming language is more suitable for system programming apps, hardware apps, embedded device and chip designing, while C# is suitable for apps development and web apps development.
+    
+    C is a structure oriented programming language while C# is an object oriented language.
+    
+    Top down approach program structure is followed by C while bottom up approach program structure is adopted by C#.
+
+    C is unmanaged code, and C# is managed by the .NET CLR (Common Language Runtime)
+    Managed code means that many of the low-level activities that one has to worry about with C, such as memory management, garbage collection, pointers, etc, are automatically handled for you.
+
+    C# is an object orienated language. C is a structed language. However, if you were referring to C++, then both C# and C++ have similar (although not identical) object orienated capabilities.
+
+    C is a procedural programming language. It has been in use for about four decades for system and application programming. It has been ported to lots of CPUs and operating systems.
+    C-sharp (C#) is an object oriented programming language. It is much newer and like many other programming languages, is a descendant of C - they share some syntactic conventions. 
+
+=================================================================================================================================================================================================
+
+
+// Python
+   
+   Python is a general-purpose, high-level programming language. 
+   The syntax emphasizes code readability by allowing programmers to use 10% of the code required by other languages, such as C.
+   Python is often used as a scripting language, but is also extremely effective as a standalone program. 
+   Using software such as Py2exe, you can write applications entirely in Python before packaging them into executable programs.
+
+   Similar to Java, Python’s large standard library allows to create functional programs almost immediately. 
+
+   Python’s interactive interpreter allows you to test features while programming. 
+   You can see what a particular code snippet does in real time and modify it for desired results without the need for compilation.
+
+   Python is a very popular interpreted scripting language. C is a very popular compiled language. 
+   Due to its compiled nature, C is generally faster than Python.
+
+The differences between C and Python are:
+
+                         C                                                                                              Python
+
+C language type discipline is static and weak.                                             Python type discipline is duct, dynamic and strong.
+
+C programming is faster, but coding is complex and too long.                               Python programming is slower compared to C, but coding is easier and short.
+
+C programming does not provide safety.                                                     Python programming offers safety.
+
+C does not have a case selection library.                                                  Python has a built-in case selection library, and also a large library compared to C.
+
+Indentation is not a necessity in C language.                                              Python programming requires indentation.
+
+C requires type declarations.                                                              Python does not require type declarations.
+
+C supports in-line assignments.                                                            Python does not support in-line assignments.
+
+C makes use of the pointers.                                                               Python does not use pointers instead uses associative arrays and sequences.
+
+C does not support checking a location outside the allocation of an array.                 Python performs checking outside an array for all iterations while looping.
+
+In C, a variable is not incremented by default in a ‘for’ loop.                            The variable used in a ‘for’ loop is auto incremented in Python.
+
+Implementing stack and queue with C is complicated.                                        Implementing stack and queue with Python can be done lot more easily.
+
+C can be used for writing processor intensive applications such as                         While writing processor intensive applications, the built-in memory management functionality of 
+video editing software or 3-D graphics software.                                           Python makes it fall short of the performance.
+	
+If an input / output operation or other system call fails,                                 Filesafe I/O and system calls are supported by Python. 
+C language will not print an error message or throw an exception.
+	
+C does not include a garbage collector.                                                    Python supports non-moving, mark-and-sweep garbage collection with automatic garbage collector.
+Boehm Garbage collector can be used as garbage collector for C.                           
+	
+C supports manual memory management with library tools malloc and free.                    Python supports automatic memory management with reference counting.
+
+C uses semicolon as statement terminator and comma as expression separator.                Python is newline terminated and semicolon is used as an expression separator.
+
+C supports 8-bit integer, 16-bit integer, 32-bit integer,                                  Python does not support 8-bit, 16-bit, 32-bit, 64-bit integers and word size. 
+64-bit long integer and word size.                                                         Python supports arbitrarily precise bignum data types.
+
+C supports other data types like character, string, Boolean and enum.                      Python supports string and Boolean. Python does not support character and enum data types.
+
+C supports single precision float, double and long double.                                 Python does not support single precision float, double and long double instead supports double precision float.
+
+C support single precision and double precision complex numbers.                           Python supports double precision complex numbers.
+
+C supports fixed size array (both single and multi dimensional) and                        Python supports one-dimensional dynamic size array.
+one-dimensional dynamic size array.
+
+The syntax for accessing an array element in C language is name[index].                    Syntax for accessing an array element in Python is also name[index], but in Python, the index may be a negative number. 
+                                                                                           The negative number indicates the corresponding number of places before the end of the array.
+
+C does not support associative arrays but Glib, uthash and libraries with                  Associative arrays in Python are called dictionaries and they are marked with curly braces.
+BSD licenses can be used to support associative arrays in C.
+
+C lets comparison for string literals, but the strings stored as character                 Python uses ‘+’ symbol as the concatenation operator of string data structures.
+arrays use strcat function for concatenation.
+
+=================================================================================================================================================================================================
+
+
+// PHP
+
+   PHP is a common language for webpage design that is sometimes used as a scripting language in *nix. 
+   PHP is designed for rapid website development, and as a result contains features that make it easy to link to databases, generate HTTP headers, and so forth. 
+   As a scripting language, it contains a relatively simple set of basic components that allow the programmer to quickly get up to speed, though it does have more sophisticated object-oriented features. 
+
+
+
+   

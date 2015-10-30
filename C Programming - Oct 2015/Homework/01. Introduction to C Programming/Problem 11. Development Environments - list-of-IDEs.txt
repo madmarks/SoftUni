@@ -1,0 +1,42 @@
+/* ====================================
+ * Problem 11. Development Environments
+ * ====================================
+ *
+ * Perform a research (e.g. in Google or Wikipedia) and provide a short list with popular development environments (IDEs) like Eclipse. 
+ * Write in a text file called "list-of-IDEs.txt" at least five IDEs along with 2-3 sentences about each of them.
+ * Use English.
+ *
+ */
+
+1. Visual Studio
+Microsoft Visual Studio is an integrated development environment (IDE) from Microsoft. 
+It is used to develop computer programs for Microsoft Windows, as well as web sites, 
+web applications and web services. Visual Studio uses Microsoft software development 
+platforms such as Windows API, Windows Forms, Windows Presentation Foundation, Windows Store 
+and Microsoft Silverlight. It can produce both native code and managed code.
+
+2. Eclipse
+Eclipse is an integrated development environment (IDE). It contains a base workspace and 
+an extensible plug-in system for customizing the environment. Written mostly in Java, 
+Eclipse can be used to develop applications. By means of various plug-ins, Eclipse 
+may also be used to develop applications in other programming languages: Ada, ABAP, C, C++, 
+COBOL, Fortran, Haskell, JavaScript, Lasso, Natural, Perl, PHP, Prolog, Python, R, Ruby, Scala, 
+Clojure, Groovy, Scheme, and Erlang. It can also be used to develop packages for the software Mathematica. 
+Development environments include the Eclipse Java development tools (JDT) for Java and Scala, 
+Eclipse CDT for C/C++ and Eclipse PDT for PHP, among others.
+
+3. Netbeans
+NetBeans is an integrated development environment (IDE) for developing primarily with Java, 
+but also with other languages, in particular PHP, C/C++, and HTML5. It is also an 
+application platform framework for Java desktop applications and others.
+
+4. Komodo IDE
+Supports all major programming languages, providing a single tool that meets development needs across the spectrum. 
+Whether working with Python, PHP, Ruby, Perl, HTML, CSS or JavaScript, Komodo provides a clean, intuitive interface with 
+advanced editing capabilities and integrated tools for the most functionality.  
+
+5. IDEA
+IntelliJ IDEA is a Java IDE by JetBrains, available as an Apache 2 Licensed community edition and commercial edition. 
+It is often simply referred to as "IDEA" or "IntelliJ". In a report by Infoworld in 2010, IntelliJ got the highest 
+test center score out of the 4 Top Java Programming Tools : Eclipse, "IntelliJ IDEA", NetBeans, and Oracle JDeveloper.
+
