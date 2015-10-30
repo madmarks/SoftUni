@@ -2,6 +2,13 @@
 **/dist/
 **/build/
 
+# NetBeans specific
+**/.dep.inc
+**/nbproject/**
+!**/nbproject/project.xml
+!**/nbproject/project.properties
+!**/nbproject/configurations.xml
+
 # Object files
 *.o
 *.ko
