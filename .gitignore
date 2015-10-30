@@ -34,3 +34,6 @@
 # PDF files
 *.pdf
 
+# ZIP files
+*.zip
+
