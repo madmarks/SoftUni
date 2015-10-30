@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
+#include "arr_func.h"
+
 double arr_min(double *arr, int len)
 {
     int i;
@@ -46,15 +48,7 @@ void arr_clear(double *arr, int len)
 
 double arr_average(double *arr, int len)
 {
-    int i;
-    double sum = 0;
-    
-    for(i = 0; i < len; i++)
-    {
-        sum += arr[i];
-    }
-    
-    return sum/(double)len;
+    return arr_sum(arr, len)/(double)len;
 }
 
 double arr_sum(double *arr, int len)
