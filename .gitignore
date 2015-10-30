@@ -1,3 +1,7 @@
+# Ant specific
+**/dist/
+**/build/
+
 # Object files
 *.o
 *.ko
