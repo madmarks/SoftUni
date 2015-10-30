@@ -5,6 +5,7 @@
 
 #define BUFFER_LENGTH 100
 
+void error(char *);
 double reverse(char *str, int *error);
 
 /*
@@ -39,30 +40,51 @@ int main()
     return (EXIT_SUCCESS);
 }
 
-double reverse(char *str, int *error)
+void error(char *msg)
+{
+    if(errno != 0)
+    {
+        fprintf(stderr, "%s\n", strerror(errno));
+    }
+    perror(msg);
+}
+
+double reverse(char *str, int *err)
 {   
-    *error = 1;
+    *err = 1;
     int length = strlen(str);
     
     if(length > 0)
     {
         char *strReversed = malloc(length + 1);
-        strReversed[length] = '\0';
-        
-        int i;
-        for(i = 0; i < length; i++)
+        if(NULL != strReversed)
         {
-            strReversed[i] = str[length - 1 - i];
+            strReversed[length] = '\0';
+        
+            int i;
+            for(i = 0; i < length; i++)
+            {
+                strReversed[i] = str[length - 1 - i];
+            }
+
+            char *endPtr;
+            errno = 0;
+            double d = strtod(strReversed, &endPtr);
+
+            if(errno == 0 && strReversed != endPtr)
+            {
+                free(strReversed);
+                
+                *err = 0;
+                return d;
+            }
+            
+            free(strReversed);
         }
-        
-        char *endPtr;
-        errno = 0;
-        double d = strtod(strReversed, &endPtr);
-        
-        if(errno == 0 && strReversed != endPtr)
+        else
         {
-            *error = 0;
-            return d;
+            error("malloc() cannot allocate memory!");            
+            return 0.0;
         }
     }
    
