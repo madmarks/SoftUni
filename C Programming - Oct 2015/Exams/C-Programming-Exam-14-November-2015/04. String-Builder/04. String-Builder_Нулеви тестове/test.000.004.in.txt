@@ -1,0 +1,7 @@
+concat-Dennis
+concat-Ritchie
+insert- MacAlistair -6
+concat- is the inventor of the UNIX operating system
+concat- and the C# programming language.
+replace-C#-C
+over

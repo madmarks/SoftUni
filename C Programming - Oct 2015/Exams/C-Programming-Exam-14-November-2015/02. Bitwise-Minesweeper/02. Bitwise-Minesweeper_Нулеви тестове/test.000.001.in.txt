@@ -1,0 +1,10 @@
+2
+31
+50
+right
+down
+left
+left
+right
+up
+end

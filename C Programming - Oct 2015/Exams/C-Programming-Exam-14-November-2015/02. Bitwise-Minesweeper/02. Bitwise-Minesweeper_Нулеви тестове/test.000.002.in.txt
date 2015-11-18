@@ -1,0 +1,12 @@
+3
+69
+26
+34
+right
+up
+right
+right
+up
+left
+left
+end
