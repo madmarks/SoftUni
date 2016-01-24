@@ -1,0 +1,50 @@
+- type: square
+  center_x: 0
+  center_y: 0
+  side: 2
+  color: black
+
+- type: square
+  center_x: 0
+  center_y: 0
+  side: 100
+  color: red
+
+- type: square
+  center_x: 0
+  center_y: 0
+  side: 200
+  color: blue
+
+- type: circle
+  center_x: 0
+  center_y: 0
+  radius: 50
+  color: blue
+
+- type: circle
+  center_x: 0
+  center_y: 0
+  radius: 100
+  color: red
+
+- type: polygon
+  center_x: 0
+  center_y: 0
+  radius: 170
+  num_sides: 7
+  color: green
+
+- type: pie
+  center_x: 0
+  center_y: 0
+  radius: 70
+  arg_degrees: 45
+  color: yellow
+
+- type: rectangle
+  center_x: 0
+  center_y: 0
+  width: 240
+  height: 160
+  color: green
