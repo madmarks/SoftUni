@@ -59,3 +59,5 @@
 *.zip
 *.maff
 
+# Media files
+*.mp4
