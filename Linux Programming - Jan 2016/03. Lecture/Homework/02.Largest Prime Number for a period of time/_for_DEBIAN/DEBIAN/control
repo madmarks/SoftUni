@@ -1,0 +1,10 @@
+Package: largest-prime
+Version: 1.0
+Section: custom
+Priority: optional
+Architecture: all
+Essential: no
+Installed-Size: 8096
+Maintainer: nikto.net
+Description: Find largest prime number for period of time
+

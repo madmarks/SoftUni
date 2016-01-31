@@ -1,0 +1,14 @@
+CC:=gcc
+CFLAGS:=-c -Wall -O -std=c11
+
+
+all: compile
+
+compile: main.o
+	$(CC) main.o -o largest_prime_for_given_time
+
+main.o: main.c
+	$(CC) $(CFLAGS) main.c
+
+clean:
+	-rm -f *.o

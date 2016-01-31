@@ -1,0 +1,21 @@
+CC:=gcc
+CFLAGS:=-c -Wall -O -std=c11
+LDFLAGS:=-lm
+
+
+all: compile
+
+compile: main.o perimeter.o surface.o
+	$(CC) main.o perimeter.o surface.o $(LDFLAGS) -o polygon_calculator
+
+main.o: main.c
+	$(CC) $(CFLAGS) main.c
+
+perimeter.o: perimeter.c
+	$(CC) $(CFLAGS) perimeter.c
+
+surface.o: surface.c
+	$(CC) $(CFLAGS) surface.c
+
+clean:
+	-rm -f *.o

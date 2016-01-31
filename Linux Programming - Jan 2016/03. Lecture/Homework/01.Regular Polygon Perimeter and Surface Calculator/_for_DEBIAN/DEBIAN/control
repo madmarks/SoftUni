@@ -1,0 +1,10 @@
+Package: polygon-calculator
+Version: 1.0
+Section: custom
+Priority: optional
+Architecture: all
+Essential: no
+Installed-Size: 7928
+Maintainer: nikto.net
+Description: Calculates perimeter and surface of given equilateral figure by given side and number of angles
+

@@ -1,0 +1,56 @@
+
+valgrind -v --leak-check=full --track-origins=yes
+
+------------------------------------------------------------------------------------------------------------------------------
+
+-h --help
+Show help for all options, both for the core and for the selected tool. If the option is repeated it is equivalent to giving
+--help-debug.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+-v,--verbose
+Be more verbose. Gives extra information on various aspects of your program, such as: the shared objects loaded, the
+suppressions used, the progress of the instrumentation and execution engines, and warnings about unusual behaviour.
+Repeating the option increases the verbosity level.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+--leak-check=full
+
+--leak-check=<no|summary|yes|full> [default:  summary]
+When enabled, search for memory leaks when the client program finishes. If set to summary, it says how many leaks occurred.  
+If set to full or yes , it also gives details of each individual leak.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+--track-fds=<yes|no> [default:  no]
+When enabled, Valgrind will print out a list of open file descriptors on exit or on request, via the gdbserver monitor
+command v.info open_fds.   Along with each file descriptor is printed a stack backtrace of where the file was
+opened and any details relating to the file descriptor such as the file name or socket details.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+--log-file=<filename>
+Specifies that Valgrind should send all of its messages to the specified file.    If the file name is empty, it causes an
+abort. There are three special format specifiers that can be used in the file name.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+--track-origins=yes -> tracks the source of uninitialized data
+
+--track-origins=<yes|no> [default:  no]
+Controls whether Memcheck tracks the origin of uninitialised values.     By default,  it does not,  which means that
+although it can tell you that an uninitialised value is being used in a dangerous way,  it cannot tell you where the
+uninitialised value came from.  This often makes it difficult to track down the root problem.
+
+When set to yes, Memcheck keeps track of the origins of all uninitialised values.   Then, when an uninitialised value
+error is reported, Memcheck will try to show the origin of the value.    An origin can be one of the following four
+places: a heap block, a stack allocation, a client request, or miscellaneous other sources (eg, a call to brk).
+
+For  uninitialised  values  originating  from  a  heap  block,  Memcheck  shows  where  the  block  was  allocated.      For
+uninitialised values originating from a stack allocation, Memcheck can tell you which function allocated the value, but
+no more than that -- typically it shows you the source location of the opening brace of the function.   So you should
+carefully check that all of the function’s local variables are initialised properly.
+
+------------------------------------------------------------------------------------------------------------------------------

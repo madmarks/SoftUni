@@ -1,0 +1,51 @@
+How to convert binary to .deb:
+
+   - Make a new folder _for_DEBIAN
+   - Make directory DEBIAN inside of folder _for_DEBIAN
+   - Then $ vi DEBIAN/control -> DEBIAN/control example file:        
+        
+        Package: largest-prime-for-given-time
+        Version: 1.0
+        Section: custom
+        Priority: optional
+        Architecture: all
+        Essential: no
+        Installed-Size: 8096
+        Maintainer: nikto.net
+        Description: Find largest prime number for period of time
+
+   - Inside the directory _for_DEBIAN make directori usr/bin/
+   - Then move the executable file largest_prime_for_given_time to usr/bin/
+   - Go one level up from the directory _for_DEBIAN
+   - dpkg-deb --build _for_DEBIAN
+   - rename _for_DEBIAN.deb to largest-prime-for-given-time.deb
+   - Then $ sudo dpkg -i largest-prime-for-given-time.deb
+   - And finally $ largest-prime-for-given-time
+   
+   
+Important:
+
+ !!! sudo dpkg -P zip -> -P will remove everything, including setttings and configuration files.
+   
+ !!! apt-get is that it will install dependencies and dpkg does not
+ 
+ !!! removal of dependencies does not happen with dpkg. apt-get does remove dependencies
+
+   - sudo dpkg -i largest-prime-for-given-time.deb ->  install a local largest-prime-for-given-time.deb file
+     
+   - dpkg -L largest-prime-for-given-time -> To list the files installed by a package
+   
+   - dpkg -l | grep apache2 -> to see if a specific package is installed
+   
+   - dpkg -l -> To list all packages installed on the system
+   
+   - sudo dpkg -r largest-prime-for-given-time -> Uninstalling a package
+     
+ !!! Uninstalling packages using dpkg, in most cases, is NOT recommended. 
+     It is better to use a package manager that handles dependencies to ensure that 
+     the system is in a consistent state. For example using dpkg -r zip will remove 
+     the zip package, but any packages that depend on it will still be installed and 
+     may no longer function correctly.
+     
+     
+     
