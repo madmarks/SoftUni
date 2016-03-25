@@ -6,7 +6,7 @@ public class MasterNumbers
     {
         int n = int.Parse(Console.ReadLine());
 
-        for (int num = 1; num < n; num++)
+        for (int num = 1; num <= n; num++)
         {
             if (IsMasterNumber(num))
             {
