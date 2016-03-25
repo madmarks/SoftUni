@@ -30,7 +30,7 @@ public class MasterNumbers
     {
         string numString = string.Empty + num;
 
-        for (int i = 0; i < numString.Length; i++)
+        for (int i = 0; i < numString.Length / 2; i++)
         {
             if (numString[i] != numString[numString.Length - 1 - i])
             {
